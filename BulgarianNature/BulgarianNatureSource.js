@@ -1,19 +1,10 @@
  //-----AUDIO-------
-        //var playPause = false;
+       
         var mysong = new Audio('02-Rodopa.mp3');
         mysong.loop = true;
         mysong.autoplay = true;
        
-        //  $(".play").click(function(){
-        //     if(playPause){
-        //         mysong.pause();
-        //         playPause = false;
-        //       }else{
-        //         mysong.play();
-        //         playPause = true;
-        //       }
-             
-        //  })
+        
              $(".mute").click(function(){
                   mysong.play();
                 $(".mute").addClass('PausePlayHidden');
