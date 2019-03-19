@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+  
+    <title>Page Title</title>
+   <script src="jquery-3.3.1.min.js" ></script>
+   <link href="BulgarianNatureStyle.css" rel="stylesheet">
+   <!-- <style>
+       body{
+           margin:0;
+           padding: 0;
+           /* background: rgb(200, 247, 208); */
+           background-image: url("orig (1).jpg");
+           background-size: cover;
+           background-attachment: fixed;
+           
+           
+       }
+       header{
+           width: 100%;
+           height: 90px;
+           position: absolute;
+           top:0px;
+           margin-top: 0px;
+           transition: all 0.2s ;
+
+       }
+      
+       header  ul li{
+           
+           display: inline-block;
+           margin-right: 50px;
+           margin-top: -25px;
+           padding: 39px 0px 39px 0px ;
+           transition: all 0.1s ;
+           color:white;
+          
+       }
+      
+       header ul li:hover{
+           border-bottom: 3px solid green;
+           color: green;
+           cursor: pointer;
+       }
+       header:hover{
+           background: rgba(255, 255, 255, 0.4);
+
+       }
+       header:hover li{
+               color:black;
+       }
+       .Picture_3{ 
+           transition: all 1.5s;
+       }
+       .Picture_2{
+           transition: all 1.5s;
+       }
+      
+      ul li ul{
+          width: 300px;
+         height: 150px;;
+         position: absolute;
+         background: rgba(255, 255, 255, 0.4);
+         
+         /* transition: height 0.5s; */
+         padding:0px;
+         top:90px;
+         margin:0px;
+         transform: scale(0);
+         opacity: 0;
+
+     }
+           
+     li.about:hover ul , li.what:hover ul{
+          
+          /* height: 150px; */
+          animation: anim 0.5s 0s 1 linear forwards;
+          overflow: none;
+       }
+
+         @keyframes anim{
+          0%{transform: scale(0.1); opacity: 0} 
+          50%{transform: scale(1.3); opacity: 0.5; }
+          100%{transform: scale(1);opacity: 1; }
+          
+      }
+          
+       ul li ul li{
+           display: block;
+           color:aqua;
+           padding:0;
+           margin:10px;
+         }
+         ul li ul a{
+             text-decoration: none;
+         }   
+           
+          
+      
+       ul li ul li:hover{
+           border:none;
+          box-shadow: 2px 2px 2px rgb(56, 55, 55) ;
+         }   
+           
+      
+          
+       .video{
+           width:58.5%;
+           height:300px;
+            position: relative;
+           top: 600px;
+           margin: auto;
+           overflow: hidden;
+           box-shadow: 5px 5px 7px rgb(60, 102, 67);
+       }
+          
+       .video_inside{
+           width:3360px;
+           height:300px;
+           position: absolute;
+           transition: all 2s ease-out;
+           } 
+
+        iframe{
+           float: left;
+
+        }
+          
+      .move_left{
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+          position: absolute;
+          background: rgba(0, 0, 0, 0.5) ;
+          top: 120px;
+          left: 5px;
+          font-size: 40px;
+          text-align: center;
+          color:white;
+          transition: all 0.5s ease-out;
+      }
+          
+         
+      .move_right{
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+          position: absolute;
+          background: rgba(0, 0, 0, 0.5) ;
+          top: 120px;
+          left: 110%;
+           font-size: 40px;
+          text-align: center;
+          color:white;
+          transition: all 0.5s ease-out;
+          
+      }
+          
+      .move_right:hover, .move_left:hover{
+        background: black;
+      } 
+
+     
+
+
+       
+      .left{
+        width:200px;
+        position: fixed;
+        top:-20px;
+        left: 93%; 
+       
+      } 
+
+      .leaf{
+        animation:leaf 5s 1s infinite linear;
+        opacity: 0;
+      }
+      .leaf1{
+          animation:leaf 5s 0.5s infinite linear;
+          opacity: 0;
+      }
+      .leaf2{
+          animation:leaf 5s 1.5s infinite linear;
+          opacity: 0;
+      }
+      .leaf3{
+          animation:leaf 5s 3s infinite linear;
+          opacity: 0;
+      }
+      .leaf4{      
+          animation:leaf 5s 4.5s infinite linear;
+          opacity: 0;
+      }
+      .leaf5{
+          animation:leaf 5s 2.5s infinite linear;
+          opacity: 0;
+      }
+
+      @keyframes leaf{
+
+    0%{transform:translateY(0px) rotateX(0deg); opacity: 0;}
+    25%{transform:translateY(200px) rotateX(180deg); opacity: 1;}
+    50%{transform:translateY(400px) rotateX(0deg) rotateZ(180deg); opacity: 1;}
+    75%{transform:translateY(600px) rotateX(180deg); opacity: 1;}
+    100%{transform:translateY(800px) rotateX(0deg);opacity: 1; }
+} 
+h1{
+    margin-top:520px;
+    position: absolute;
+    left:40%;
+    color:rgb(150, 12, 12);
+    font-family:' Verdana';
+    text-shadow: 2px 2px 3px  rgb(82, 138, 92);
+    
+} 
+h2{
+    position: absolute;
+    left:180px;
+    margin-top:750px;
+    color:rgb(150, 12, 12);
+    font-family:' Verdana';
+    text-shadow: 2px 2px 3px  rgb(82, 138, 92);
+    
+
+}
+
+
+.corosel{
+     width: 500px;
+    height: 300px;
+   box-shadow: 3px 3px 3px rgb(60, 102, 67);
+    position: absolute;
+    top:1100px;
+    left:20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    
+}
+.bilka{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+   
+    display: none;
+}
+.bilka_active{
+   display: block;
+   
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: inline-block;
+    top:270px;
+    margin:0px 5px 0px 5px;
+
+}
+.circle_active{
+    background: white;
+    transform: scale(0.8);
+}
+
+  .play, .mute{
+    width:30px; 
+   
+    margin-left:66%; 
+    position:absolute;
+    opacity: 0.6;
+    cursor: pointer;
+  } 
+ .play, .mute:hover{
+      opacity: 1;
+  }
+  
+  .PausePlayHidden{
+      display: none;
+  } 
+  @media  (max-width: 568px){
+         
+          .move_left{
+              transform:rotate(90deg);
+              top:0px;
+              left:150px;
+          }
+          header ul{
+              text-align: center;
+          }
+          .corosel, h2{
+              margin-left:21%;
+          }
+          .play, .mute{
+              left: 27%;
+          }
+          .left{
+           left: 85%;
+          }
+      }  
+
+   </style> -->
+</head>
+<body>
+  <main>
+        <img class="Picture_1"  src="orig.jpg" alt="" width="100%" height="500px" style="position:absolute; box-shadow: 0px 6px 5px rgb(60, 102, 67);" >
+        <img class="Picture_2" src="Nature_Rila_ezero_Tzvetia.jpg" alt="" width="100%" height="500px" style="position:absolute" >
+        <img class="Picture_3" src="pulpit.jpeg" alt="" width="100%" height="500px" style="position:absolute" >
+    <header>
+        <nav>
+         <ul>
+           <li class="about">about us
+                <ul>
+                     <li><a href="#" >dfgd</a></li>
+                     <li><a href="#">rgsfgs</a></li>
+                </ul>
+             </li>
+            <li class="what" >what we do
+                <ul >
+                    <li><a href="#">sedd</a></li>
+                    <li><a href="#">dfgdg</a></li>
+                    <li><a href="#">dfgdg</a></li>
+                    <li><a href="#">dfgdg</a></li>
+                    <li><a href="#">dfgdg</a></li>
+                </ul>                  
+             </li>
+            <li>
+                 get involved
+            </li>
+            <li>
+                membership & giving
+            </li>
+            <img src="speaker-icon-7.png" alt=""  class="play  PausePlayHidden" >
+            <img src="2000px-Mute_Icon.svg.png" alt="" class="mute "  > 
+          </ul>  
+        </nav>           
+    </header>  
+    <section>      
+      <h1>The Beauty Of Bulgarian Nature</h1>
+        <div class="video">
+          <div class="video_inside">
+            <iframe width="560" height="300px" src="https://www.youtube.com/embed/n2WdPwaLngM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="300px" src="https://www.youtube.com/embed/FniGH5e9xkk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="300" src="https://www.youtube.com/embed/kcEqGmv17Bw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="300" src="https://www.youtube.com/embed/HE6tAQESWVk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            <iframe width="560" height="300" src="https://www.youtube.com/embed/bvuiu8wqYBE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="300" src="https://www.youtube.com/embed/IgexODx7ewI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="move_left"><</div>
+          <div class="move_right" >></div>
+        </div>
+    </section>       
+        <div class="left">  
+                <img src="ledovo-listo.png" style="width:50px; position: absolute; left:10px" class="leaf">
+                <img src="Transparent-1.png" style="width:50px; position: absolute; left:60px" class="leaf1">
+                <img src="G3611.png" style="width:50px; position: absolute; left:90px" class="leaf2">
+                <img src="ledovo-listo.png" style="width:50px; position: absolute; left:20px" class="leaf3">
+                <img src="4c47b26c9.png" style="width:50px; position: absolute; left:50px" class="leaf4">
+                <img src="Transparent-1.png" style="width:50px; position: absolute; left:80px" class="leaf5">
+        </div> 
+    <section>  
+        <h2>Bulgarian Herbs</h2>
+        <div class="corosel">
+            <img src="MursalaTea.jpg" alt="" class="bilka bilka_active">
+            <img src="7950c.jpg" alt="" class="bilka">
+            <img src="enjovche.jpg" alt="" class="bilka">
+            <img src="MursalaTea.jpg" alt="" class="bilka">
+            <img src="7950c.jpg" alt="" class="bilka">
+            <img src="enjovche.jpg" alt="" class="bilka">
+            <div class="circle circle_active"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div> 
+    </section>           
+  </main>        
+    
+             
+                
+            
+       
+                        
+                         
+   
+        
+      
+     
+    <!-- <script>
+        //-----AUDIO-------
+        //var playPause = false;
+        var mysong = new Audio('02-Rodopa.mp3');
+        mysong.loop = true;
+        mysong.autoplay = true;
+       
+        //  $(".play").click(function(){
+        //     if(playPause){
+        //         mysong.pause();
+        //         playPause = false;
+        //       }else{
+        //         mysong.play();
+        //         playPause = true;
+        //       }
+             
+        //  })
+             $(".mute").click(function(){
+                  mysong.play();
+                $(".mute").addClass('PausePlayHidden');
+                $(".play").removeClass('PausePlayHidden');
+             })
+               
+
+             $(".play").click(function(){
+                mysong.pause();
+                $(".mute").removeClass('PausePlayHidden');
+                $(".play").addClass('PausePlayHidden');
+             })
+              
+     
+        //----------DROP MENU IN HEADER--------
+        $('ul li ul li').mousedown(function(){$(this).attr('style', 'transform:  scale(0.95)')})
+                        .mouseup(function(){$(this).attr('style', 'transform:  scale(1.06)')})
+                        .mouseover(function(){ $(this).attr('style', 'transform:  scale(1.06)')})    
+                        .mouseleave(function(){$(this).attr('style', 'transform:  scale(1)') });
+                             
+        
+           
+        
+            
+        
+        //------------PICTURE SCROLLING IN HEADER------
+        
+        setTimeout(ar,0);
+        function ar(){
+        setTimeout(function(){
+         document.querySelector('.Picture_3').setAttribute("style", "opacity: 0; position: absolute;");  
+         document.querySelector('.Picture_2').setAttribute("style", "opacity: 1; position: absolute;");          
+        },2500);
+
+        setTimeout(function(){
+         document.querySelector('.Picture_2').setAttribute("style", "opacity: 0; position: absolute;") ;           
+        },5000);
+
+        setTimeout(function(){
+         document.querySelector('.Picture_3').setAttribute("style", "opacity: 1; position: absolute;") ;           
+        
+         ar();            
+        },7500);
+        }; 
+        
+        //--------VIDEO SCROLLING----------
+        var move = 0;
+       $('.move_left').click(function(){
+            move += -1120;
+            if (move ==  -2240){
+                $('.move_left').attr('style', 'left: -100px');
+            }
+            document.querySelector('.move_right').setAttribute('style','left: 1060px')
+             document.querySelector('.video_inside').setAttribute('style','margin-left: '+ move + 'px')
+        }) ;  
+           
+
+       
+        $('.move_right').click(function(){
+              move += 1120;
+            if (move == 0){
+                document.querySelector('.move_right').setAttribute('style','margin-left: 100px');
+            }
+            document.querySelector('.move_left').setAttribute('style', 'left:5px');
+            document.querySelector('.video_inside').setAttribute('style','margin-left:' + move + 'px')
+        })
+            
+         //------------COROSEL BILKI-------
+         var corosel_circle = document.querySelectorAll('.circle');
+         var bilki = document.querySelectorAll('.bilka');
+         var i = 0;
+        var scroll =  setInterval(Corosel,3000);
+         function Corosel(){
+             i += 1;
+             if( i == corosel_circle.length){
+                 i = 0;
+             }
+             document.querySelector('.bilka_active').classList.remove('bilka_active');
+             bilki[i].classList.add('bilka_active');
+           document.querySelector('.circle_active').classList.remove('circle_active');
+           corosel_circle[i].classList.add('circle_active');
+         } 
+          $('.circle').click(function(){
+              $('.circle_active').removeClass('circle_active');
+              $(this).addClass('circle_active');
+              
+             
+              clearInterval(scroll);
+              
+              scroll =  setInterval(Corosel,3000);
+          })
+           
+    </script> -->
+    <script src="BulgarianNatureSource.js"></script>
+</body>
+</html>
