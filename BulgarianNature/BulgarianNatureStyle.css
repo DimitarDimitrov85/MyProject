@@ -95,7 +95,7 @@ ul li ul li:hover{
 
    
 .video{
-    width:70.5%;
+    width: 1115px;
     height:300px;
      position: relative;
     top: 600px;
@@ -257,8 +257,7 @@ transform: scale(0.8);
 
 .play, .mute{
 width:30px; 
-
-margin-left:60%; 
+margin-left:930px; 
 position:absolute;
 opacity: 0.6;
 cursor: pointer;
