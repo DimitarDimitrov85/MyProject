@@ -88,8 +88,11 @@
            corosel_circle[i].classList.add('circle_active');
          } 
           $('.circle').click(function(){
+              i = Number($(this).attr("id"));
               $('.circle_active').removeClass('circle_active');
               $(this).addClass('circle_active');
+              $(".bilka_active").removeClass("bilka_active");
+             $(bilki[i]).addClass("bilka_active")
               
              
               clearInterval(scroll);
