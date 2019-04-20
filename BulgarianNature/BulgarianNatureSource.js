@@ -32,7 +32,7 @@
         
         //------------PICTURE SCROLLING IN HEADER------
         
-        setTimeout(ar,0);
+       
         function ar(){
         setTimeout(function(){
          document.querySelector('.Picture_3').setAttribute("style", "opacity: 0; position: absolute;");  
@@ -49,7 +49,7 @@
          ar();            
         },7500);
         }; 
-        
+        ar();
         //--------VIDEO SCROLLING----------
         var move = 0;
        $('.move_left').click(function(){
@@ -76,7 +76,9 @@
          var corosel_circle = document.querySelectorAll('.circle');
          var bilki = document.querySelectorAll('.bilka');
          var i = 0;
+        
         var scroll =  setInterval(Corosel,3000);
+         
          function Corosel(){
              i += 1;
              if( i == corosel_circle.length){
@@ -87,6 +89,7 @@
            document.querySelector('.circle_active').classList.remove('circle_active');
            corosel_circle[i].classList.add('circle_active');
          } 
+         
           $('.circle').click(function(){
               i = Number($(this).attr("id"));
               $('.circle_active').removeClass('circle_active');
