@@ -75,9 +75,10 @@
          //------------COROSEL BILKI-------
          var corosel_circle = document.querySelectorAll('.circle');
          var bilki = document.querySelectorAll('.bilka');
-         var i = 0;
-        
-        var scroll =  setInterval(Corosel,3000);
+         var i = 0,
+             scroll;
+        function Interval(){
+         scroll =  setInterval(Corosel,3000);
          
          function Corosel(){
              i += 1;
@@ -88,8 +89,8 @@
              bilki[i].classList.add('bilka_active');
            document.querySelector('.circle_active').classList.remove('circle_active');
            corosel_circle[i].classList.add('circle_active');
-         } 
-         
+         } }
+         Interval();
           $('.circle').click(function(){
               i = Number($(this).attr("id"));
               $('.circle_active').removeClass('circle_active');
@@ -100,5 +101,5 @@
              
               clearInterval(scroll);
               
-              scroll =  setInterval(Corosel,3000);
+              Interval();
           })
