@@ -1,0 +1,95 @@
+body{
+    background: linear-gradient(to right, white 20%, rgb(153, 152, 152));
+    text-align: center;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    display: inline;
+}    
+p{
+    color: rgb(129, 126, 126); 
+ }     
+a{
+    text-decoration: none;
+    color:rgb(173, 70, 56);
+}
+a:hover{
+    text-decoration: underline;
+}
+.person{
+    width: 400px;
+    height: 400px;
+    background: url('CV_Picture.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-left: calc(50% - 200px);
+    transition: all 1s;
+    position: absolute; 
+    border-radius: 10px;
+    cursor: pointer;
+}
+.person_unactive{
+    transform: scale(0);
+    opacity: 0;
+}
+.Cv_All_Info_Unactive{
+    position: absolute;
+    width: 600px;
+    margin-left: calc(50% - 300px);
+    transition: all 1s ;
+    opacity: 0;
+    transform: scale(0);
+}
+.Cv_All_Info{
+    opacity: 1;
+    transform: scale(1)
+}
+.information{
+        height:60px;
+        overflow: hidden;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        margin-bottom: 6px;
+        cursor: pointer;
+        transition: all 1s;
+        
+}
+
+.information_active{
+    height:auto;
+    box-shadow: 3px 3px 6px black;
+    background: rgb(236, 240, 236);
+    transform: rotateX(360deg) scale(1.1) ;
+    
+}
+.information:hover{
+    background: rgb(236, 240, 236);
+    
+}
+ .languages_Skill{
+     position: relative;
+     margin:auto;
+     top:-5px;
+     width: 200px;
+     height: 10px;
+     background: rgb(175, 174, 174)
+ }
+ .languages_Skill_Content{
+    position: relative;
+    width: 0px;
+    height: 10px;
+    background: black;
+ }
+
+
+   
+ 
+ 
+
+        
+
+  
+
+
+       
