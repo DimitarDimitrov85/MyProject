@@ -11,7 +11,7 @@ body{
     text-align: left;
     
 }
-.matrixLeft{
+.matrixRight{
     width:400px;
     height: 770px;
     position: fixed ;
@@ -20,7 +20,7 @@ body{
     text-align: left;
     margin-left: calc(100% - 420px);
 }
-.matrix p, .matrixLeft p{
+.matrix p, .matrixRight p{
     color:green;
 }
 
@@ -152,7 +152,7 @@ a:hover{
 .matrix{
     width: 150px;
 }
-.matrixLeft{
+.matrixRight{
     width: 150px;
     margin-left: calc(100% - 170px);
 }
